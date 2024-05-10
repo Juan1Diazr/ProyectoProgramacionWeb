@@ -27,5 +27,5 @@ app.get("/data", function (req, res) {
 var puerto = 3001;
 
 app.listen(puerto, function () {
-  console.log(`App esta escuchando correctamente en el puesto ${puerto}`);
+  console.log(`App esta escuchando correctamente en el puerto${puerto}`);
 });
