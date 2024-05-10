@@ -13,10 +13,9 @@ app.get("/data", function (req, res) {
     user: "root",
     password: "",
   });
-
   conexion.connect(function (err) {
     if (err) throw err;
-    conexion.query("SELECT * FROM Usuario", function (error, results, fields) {
+    conexion.query( function (error, results, fields) {
       if (error) throw error;
       res.send(results);
       conexion.end();
